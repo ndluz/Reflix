@@ -1,0 +1,195 @@
+:root {
+  --vermelho: #E50914;
+  --preto: #141414;
+  --branco: #fff;
+}
+
+
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* elementos base ****************************************************************************/
+body {
+  background: var(--preto);
+  font-family: 'Times New Roman', Times, sans-serif;
+  color: white;
+}
+header .container {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Trebuchet MS';
+}
+header .logo {
+  margin-left: 2px;
+  font-family: 'Bebas Neue';
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  display: flex;
+}
+
+.titulo-container {
+  display: flex;
+}
+.titulo-vermelho {
+  color: var(--vermelho);
+}
+
+.titulo-branco {
+  color: var(--branco)
+}
+
+header nav a{
+  text-decoration: none; 
+  color: #AAA;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/* elementos do filme/jogo ***************************************************/
+
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0.50), rgba(0,0,0,.50)100%), url('../img/raconcity.jpg');
+
+  height: 420px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-bottom: 40px;
+  font-family: 'Trebuchet MS';
+  
+}
+
+.filme-principal .titulo {
+  margin-top: 10px;
+  font-size: 40px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 2px;
+}
+
+main .titulo-container  :last-child{
+  margin-left: 5px;
+}
+
+.botoes {
+  opacity: 0;
+}
+
+
+.botao {
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+
+  padding: 15px 30px; 
+  margin-right: 15px;
+  font-size: 12px;
+  
+  cursor: pointer;
+
+  transition: .3s ease all;
+}
+
+.botao:hover {
+
+  color: black;
+  background-color: white;
+}
+
+.botao i {
+  margin-right: 5px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+.box-filme {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.carousel-filmes {
+  margin-top: 5px;
+}
+.item-datalhe {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  position: absolute;
+  opacity: 0;
+  left: 70%;
+}
+
+.visible {
+  opacity: 1;
+}
+
+/* modal ***************************************************/
+
+/* .video-container {
+  position: fixed;
+  padding: 15px 40px;
+  background-color: var(--vermelho);
+  color: var(--branco);
+  border-radius: 40px;
+} */
+
+.video-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 99999;
+  background-color: var(--preto);
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  align-items: center;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.video-container .close {
+  position: absolute;
+  top: 15%;
+  left: 80%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.video-container iframe {
+  width: 90%;
+  height: 400px;
+  max-width: 800px;
+
+}
+
+.video-container.show {
+  pointer-events: all;
+  opacity: 1;
+}
+
+
+
+
+
+  

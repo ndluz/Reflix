@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/main.css">
+
+  <!--Responsividade-->
+  <link rel="stylesheet" href="style/responsive.css">
+
+  <!--Owl css-->
+  <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+  <title>Netflix Clone</title>
+  </title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="titulo-container">
+        <h2 class="logo titulo-vermelho">Re</h2>
+        <h2 class="logo titulo-branco">FLIX</h2>
+      </div>
+      <nav>
+        <a href="#">Início</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="#">Filmes</a>
+        <a href="#">Animações</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="filme-principal">
+      <div class="container">
+        <div class="titulo-container">
+          <h3 class="titulo ">Re</h3>
+          <h3 class="titulo ">Sident </h3>
+          <h3 class="titulo titulo-vermelho">Evil</h3>
+        </div>
+        <p class="descricao">
+          Resident Evil é uma franquia de mídia que pertence à empresa de jogos eletrônicos Capcom.
+          Foi criada por Shinji Mikami como uma série de videojogos de survival horror, ação, tiro
+          em terceira pessoa e primeira pessoa.
+        </p>
+        
+        <div class="botoes">
+          <button role="button" class="btn botao">
+            <i class="fas fa-play"></i>
+            ASSISTIR TRAILER
+          </button>
+        </div>
+      </div>
+      <div class="detalhe item-datalhe"><img class="box-detalhe" src="img/re1.jpg"></div>
+    </div>
+  </main>
+
+  <div class="carrossel-filmes">
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img onclick="clicou('img/re1.jpg','kEutwdia8n0')" class="box-filme" src="img/re1.jpg"></div>
+      <div class="item"><img onclick="clicou('img/re2.jpg','nzF3yoF7N_E')" class="box-filme" src="img/re2.jpg"></div>
+      <div class="item"><img onclick="clicou('img/re3.jpg','eDMjVARsCOk')" class="box-filme" src="img/re3.jpg"></div>
+      <div class="item"><img onclick="clicou('img/re4.jpg','SRRN6MvCdeg')" class="box-filme" src="img/re4.jpg"></div>
+      <div class="item"><img onclick="clicou('img/re5.jpg','hoyMT-7wEqs')" class="box-filme" src="img/re5.jpg"></div>
+      <div class="item"><img onclick="clicou('img/re6.jpg','17sInSM9kE0')" class="box-filme" src="img/re6.jpg"></div>
+      <div class="item"><img onclick="clicou('img/rereboot.jpg')" class="box-filme" src="img/rereboot.jpg"></div>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="video-container">
+      <i class="close fas fa-times"></i>
+      <iframe class="video"src="https://www.youtube.com/embed/OGb2Hkeu2BI" ></iframe>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/22efb04648.js" crossorigin="anonymous"></script>
+  <script src="js/owl/jquery.min.js"></script>
+  <script src="js/owl/owl.carousel.min.js"></script>
+  <script src="js/owl/setup.js"></script>
+</body>
+
+</html>
